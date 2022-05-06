@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<!-- For setting the property using setter method -->
+	<!-- 
+	<bean id="triangle" class="org.sample.Triangle">
+	 <property name="type" value="Equilateral"></property>
+	</bean>
+	 -->
+	 
+	 <!-- For setting the property using constructor -->
+	 <bean id="triangle" class="org.sample.Triangle">
+	 <constructor-arg type="String" value="Isoceless"></constructor-arg>
+	 <constructor-arg type="int" value="20"></constructor-arg>
+	</bean>
+</beans>

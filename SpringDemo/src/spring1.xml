@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+        
+<beans>
+
+	<bean id="square" class="org.sample.Square">
+		<property name="A" ref="pointa"></property>
+		<property name="B" ref="pointb"></property>
+		<property name="C" ref="pointc"></property>
+		<property name="D" ref="pointd"></property>
+	</bean>
+	
+	
+	<bean id="pointa" class="org.sample.Point">
+		<property name="x" value="0"></property>
+		<property name="y" value="0"></property>
+	</bean>
+	
+	<bean id="pointb" class="org.sample.Point">
+		<property name="x" value="0"></property>
+		<property name="y" value="2"></property>
+	</bean>
+	
+	<bean id="pointc" class="org.sample.Point">
+		<property name="x" value="2"></property>
+		<property name="y" value="2"></property>
+	</bean>
+	
+	<bean id="pointd" class="org.sample.Point">
+		<property name="x" value="2"></property>
+		<property name="y" value="0"></property>
+	</bean>
+</beans>
